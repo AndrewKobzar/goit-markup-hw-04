@@ -186,7 +186,7 @@ img {
   margin: auto;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  background: #2f303a;
+  /* background: #2f303a; */
 }
 
 .page-button {
