@@ -145,31 +145,29 @@ img {
 }
 
 /* авторизация */
+.auth-nav .link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
 .mail::before{
-  display: inline-block;
-  vertical-align: middle;
   content: "";
   background-image: url(../images/mail.svg);
   width: 16px;
   height: 16px;
   background-position: center;
   background-repeat: no-repeat;
-  margin-right: 10px;
-  align-items: center;
 }
 
 .tel::before{
-  display: inline-block;
-  vertical-align: middle;
   content: "";
   background-image: url(../images/tel.svg);
   width: 16px;
   height: 16px;
   background-position: center;
   background-repeat: no-repeat;
-  margin-right: 10px;
-  align-items: center;
+
 }
 
 .tel:hover::before{
@@ -181,15 +179,11 @@ img {
 }
 
 
-.auth-nav.list {
-  display: flex;
-  align-items: center;
 
-}
 .auth-nav {
   margin-left: auto;
   display: flex;
-  align-items: center;
+  align-content: center;
   gap: 50px;
   
 }
