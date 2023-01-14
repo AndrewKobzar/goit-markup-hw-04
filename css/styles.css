@@ -155,16 +155,8 @@ img {
 
 .mail {  
 fill: currentColor;
-
-
-
 }
 
-.tel {
-
-
-
-}
 
 
 .auth-nav {
@@ -360,6 +352,17 @@ fill: currentColor;
   justify-content: center;
 
 }
+
+.social-network-link:focus .link{
+  fill: var(--secondary-color)
+}
+
+.social-network-link:focus{
+  background-color: var(--hover-text-color);
+}
+
+
+
 .social-network.item:hover,
 .social-network.item:focus
  {
@@ -455,41 +458,40 @@ fill: currentColor;
   display: flex;
 justify-content: center;
 gap: 30px;
-margin-top: 30px;
+margin-top: 50px;
 }
 
 
-.client-item {
+
+
+.client-link {
   width: 170px;
   height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
 }
 
-.client-link {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
+.client-link:hover {
+  border: 1px solid var(--hover-text-color);
 }
-
 
 .client-item .link {
   fill: #AFB1B8;
 }
 
+.client-link:focus .link{
+  fill: var(--hover-text-color);
+}
 
-.client-item:hover .link ,
+.client-item:hover .link,
 .client-item:focus .link{
   fill: var(--hover-text-color);
 }
 
-.client-item:hover,
-.client-item:focus {
-  border: 1px solid var(--hover-text-color);
-}
+
 
   
 
@@ -552,13 +554,15 @@ margin-top: 30px;
   margin-right: 70px;
 }
 
-.footer .flex {
+.container-flex {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-network {
   display: flex;
   gap: 10px;
+  margin-top: 20px;
 }
 
 .footer-network a {
@@ -572,7 +576,16 @@ margin-top: 30px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);;
   border-radius: 50%;
-  margin-top: 20px;
+}
+.footer-network-link{
+  fill: var(--secondary-color);
+}
+.footer-network-link:focus .link{
+  fill: var(--secondary-color)
+}
+
+.footer-network-link:focus{
+  background-color: var(--hover-text-color);
 }
 
 .footer-network .item:hover,
@@ -582,9 +595,10 @@ margin-top: 30px;
 
 .network-title {
   font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
 
 color: var(--secondary-color);
@@ -593,7 +607,9 @@ color: var(--secondary-color);
   display: flex;
   justify-content: center;
   gap: 10px;
+  
 }
+
 
 
 
